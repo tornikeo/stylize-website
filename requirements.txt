@@ -1,0 +1,4 @@
+Flask>=2.0.2
+# --find-links https://download.pytorch.org/whl/torch_stable.html
+# torch
+# torchvision
