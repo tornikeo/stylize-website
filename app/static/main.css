@@ -1,0 +1,456 @@
+html, body {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.carousel-inner > .item > img { width:100%; height:570px; }
+
+
+.container-fluid .jumbotron {
+    top: 40%;
+    height: 90vh;
+    font-family: monospace;
+    border-radius: 0 !important;
+    background-image: url("/static/img/pexels-damian-konietzny-3977587.jpg");
+    padding-top: 13%;
+    padding-bottom: 20%;
+    background-position: bottom;
+    margin-bottom: 0 !important;
+    background-size: cover;
+}
+
+.jumbotron p{
+    align-content: center;
+}
+
+.navbar {
+    background-color: #F2EAD8 !important;
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 0 20px;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    margin-bottom: 0;
+}
+.navbar .holder{
+    text-align: center
+}
+.navbar-brand{
+    font-family: "Copperplate Gothic Light", Balthazar, Nunito, monospace;
+    font-size: 1.70rem;
+    display: flex;
+    align-items: center;
+}
+.navbar h3{
+    font-weight: lighter !important;
+}
+.navbar-nav {
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navbar .container{
+    width: 100%;
+    white-space: nowrap;
+}
+
+.container {
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+.header{
+}
+
+
+.header .container{
+    padding:0;
+}
+
+
+
+.site-footer
+{
+    background-color:#F2EAD8;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#737373;
+}
+.site-footer p{
+    color: #808080;
+    font-size: medium;
+}
+.site-footer hr
+{
+    border-top-color:#bbb;
+    opacity:0.5
+}
+.site-footer hr.small
+{
+    margin:20px 0
+}
+.site-footer h6
+{
+    color:#212529;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-top:5px;
+    letter-spacing:2px;
+    font-weight: 700;
+}
+.site-footer a
+{
+    color:#737373;
+}
+.site-footer a:hover
+{
+    color:#3366cc;
+    text-decoration:none;
+}
+.footer-links
+{
+    padding-left:0;
+    list-style:none
+}
+.footer-links li
+{
+    display:block
+}
+.footer-links a
+{
+    color:#737373;
+    font-size: medium;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+    color:#3366cc;
+    text-decoration:none;
+}
+.footer-links.inline li
+{
+    display:inline-block
+}
+.site-footer .social-icons
+{
+    text-align:right
+}
+.site-footer .social-icons a
+{
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#33353d
+}
+.copyright-text
+{
+    margin:0
+}
+@media (max-width:991px)
+{
+    .site-footer [class^=col-]
+    {
+        margin-bottom:30px
+    }
+}
+@media (max-width:767px)
+{
+    .site-footer
+    {
+        padding-bottom:0
+    }
+    .site-footer .copyright-text,.site-footer .social-icons
+    {
+        align-content: center;
+    }
+}
+.social-icons
+{
+    padding-left: 0;
+    padding-right: 34%;
+    margin-bottom:0;
+    list-style:none
+}
+
+.social-icons li
+{
+    display:inline-block;
+    margin-bottom:4px
+}
+.social-icons li.title
+{
+    margin-right:15px;
+    text-transform:uppercase;
+    color:#96a2b2;
+    font-weight:700;
+    font-size:13px
+}
+.social-icons a{
+    background-color:#eceeef;
+    color:#ffffff;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+    color:#fff;
+    background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14px
+}
+.social-icons a.facebook:hover
+{
+    background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+    background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+    background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+    background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+    .social-icons li.title
+    {
+        display:block;
+        margin-right:0;
+        font-weight:600;
+        align-content: center !important;
+    }
+    .site-footer{
+        text-align: center !important;
+    }
+    .text-justify{
+        text-align: center !important;
+    }
+}
+
+/*background-color: #f2f2f2;*/
+
+
+
+.site-section {
+    padding: 2.5em 0; }
+@media (min-width: 768px) {
+    .site-section {
+        padding: 5em 0; } }
+.site-section.site-section-sm {
+    padding: 4em 0; }
+
+.entry2 h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700; }
+.entry2 h2 a {
+    color: #000; }
+
+.site-section .entry2 img {
+    margin-bottom: 30px; }
+.site-section .entry2 {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+
+
+/*Masthead Header*/
+
+.masthead {
+    margin-bottom: 50px;
+    background: no-repeat center center;
+    background-color: #868e96;
+    background-attachment: scroll;
+    position: relative;
+    background-size: cover;
+}
+
+.masthead .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #212529;
+    opacity: 0.5;
+}
+
+.masthead .page-heading,
+.masthead .post-heading,
+.masthead .site-heading {
+    padding: 200px 0 150px;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .masthead .page-heading,
+    .masthead .post-heading,
+    .masthead .site-heading {
+        padding: 200px 5%;
+    }
+}
+
+.masthead .page-heading,
+.masthead .site-heading {
+    text-align: center;
+}
+
+.masthead .page-heading h1,
+.masthead .site-heading h1 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.masthead .page-heading .subheading,
+.masthead .site-heading .subheading {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.1;
+    display: block;
+    margin: 10px 0 0;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+    .masthead .page-heading h1,
+    .masthead .site-heading h1 {
+        font-size: 80px;
+    }
+}
+.masthead .post-heading h1 {
+    font-size: 35px;
+}
+
+.masthead .post-heading .meta,
+.masthead .post-heading .subheading {
+    line-height: 1.1;
+    display: block;
+}
+
+.masthead .post-heading .subheading {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0 30px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.masthead .post-heading .meta {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Lora', 'Times New Roman', serif;
+}
+
+.masthead .post-heading .meta a {
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .masthead .post-heading h1 {
+        font-size: 55px;
+    }
+    .masthead .post-heading .subheading {
+        font-size: 30px;
+    }
+
+}
+.post-preview > a {
+    color: #212529;
+}
+
+.post-preview > a:focus, .post-preview > a:hover {
+    text-decoration: none;
+    color: #0085A1;
+}
+
+.post-preview > a > .post-title {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.post-preview > a > .post-subtitle {
+    font-weight: 300;
+    margin: 0 0 10px;
+}
+
+.post-preview > .post-meta {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+    color: #868e96;
+}
+
+.post-preview > .post-meta > a {
+    text-decoration: none;
+    color: #212529;
+}
+
+.post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
+    text-decoration: underline;
+    color: #0085A1;
+}
+
+@media only screen and (min-width: 768px) {
+    .post-preview > a > .post-title {
+        font-size: 36px;
+    }
+
+}
+#projects h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#projects a {
+    color: #212529;
+    transition: all 0.2s;
+}
+
+#projects a:focus, a:hover {
+    color: #0085a1 !important;
+}
+
+@media (max-width: 1000px){
+    #projects .post-preview{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .container-fluid .jumbotron{
+        padding-left: 10%;
+        height: 100vh;
+        padding-top: 20%;
+        background-image: url("/static/img/pexels-ann-h-1762851.jpg");
+    }
+    .social-icons{
+        padding-right: 32%;
+    }
+}
