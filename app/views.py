@@ -10,11 +10,6 @@ import os
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
-UPLOAD_FOLDER = Path('uploads')
-GEN_FOLDER = Path('generated')
-ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
-UPLOAD_FOLDER.mkdir(exist_ok=True)
 from PIL import Image
 
 def image_from_request(name):
