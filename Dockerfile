@@ -5,11 +5,10 @@
 # COPY ./requirements.txt /var/www/requirements.txt
 # RUN pip install -r /var/www/requirements.txt
 
-FROM pytorch/pytorch
+FROM python:3.7-slim-stretch
 WORKDIR /app
 COPY './requirements.txt' .
-# RUN apt-get install libgtk2.0-dev pkg-config -yqq 
 RUN pip install --upgrade pip
 RUN pip3 install -r requirements.txt
 COPY . .
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]

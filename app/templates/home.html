@@ -1,14 +1,50 @@
-<!doctype html>
+{% extends "index.html" %}
+{% block content %}
 
-<html lang="en-us">
-  <body>
-    <title>Upload new File</title>
-    <h1>Upload new File</h1>
-    <form method=post enctype=multipart/form-data>
-        <input type=file name=content>
-        <input type=file name=style>
-        <input type="range" id="iters" name="iters" min="1" max="4" value="1">
-        <input type=submit value=Upload>
-    </form>
-  </body>
-</html>
+<div class='container-fluid'>
+    <div class="jumbotron">
+
+        {% if generated %}
+            <div class="jumbotron">
+                <img src="{{generated}}" />
+            </div>
+        {% else %}
+            <form method=post enctype=multipart/form-data>
+
+                <div class="input-group">
+                    <input type="text" class="form-control input-file-dummy" placeholder="Choose file" aria-describedby="fileHelp" required>
+                    <div class="valid-feedback order-last">File is valid</div>
+                    <div class="invalid-feedback order-last">File is required</div>
+                    <label class="input-group-append mb-0">
+                      <span class="btn btn-primary input-file-btn">
+                        Browse… <input name='content' type="file" hidden>
+                      </span>
+                    </label>
+                  </div>
+                  <small id="fileHelp" class="form-text text-muted">Choose any file you like</small>
+                <div class="form-group">
+
+                <div class="input-group">
+                <input type="text" class="form-control input-file-dummy" placeholder="Choose file" aria-describedby="fileHelp" required>
+                <div class="valid-feedback order-last">File is valid</div>
+                <div class="invalid-feedback order-last">File is required</div>
+                <label class="input-group-append mb-0">
+                    <span class="btn btn-primary input-file-btn">
+                    Browse… <input name='style' type="file" hidden>
+                    </span>
+                </label>
+                </div>
+                <small id="fileHelp" class="form-text text-muted">Choose any file you like</small>
+
+                <div class="form-group">
+                    <label for="customRange3" class="form-label">Increase style influence (takes longer) </label>
+                    <input name="iters" type="range" class="form-range" min="1" max="4" step="1" value="1" id="customRange3">
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-primary btn-lg" type="submit" target="_blank" role="button" value="upload">
+                </div>
+            </form>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

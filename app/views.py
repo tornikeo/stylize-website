@@ -1,6 +1,7 @@
 import os
 from flask import Flask, flash, request, redirect, url_for
 from flask import request, render_template
+import flask
 from werkzeug.utils import secure_filename
 from flask import send_from_directory
 from app import app
@@ -33,14 +34,24 @@ from io import BytesIO
 from flask import send_file
 import matplotlib.pyplot as plt
 
+@app.route('/home')
+def home():
+    return url_for('/')
+
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
-        content = image_from_request('content')
-        style = image_from_request('style')
-        iters = int(request.form['iters'])
-        result = app.config['MODEL'](style=style, content=content, iters=iters)
-        return download_file(pil_img=result)
+        try:
+            content = image_from_request('content')
+            style = image_from_request('style')
+            iters = int(request.form['iters'])
+            result = app.config['MODEL'](style=style, 
+                content=content, 
+                iters=iters)
+            return download_file(pil_img=result)
+        except Exception as ex:
+            flash('Something went wrong')
+            print(ex.message)
     return render_template('home.html')
 
 def download_file(pil_img):
